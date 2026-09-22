@@ -1,4 +1,4 @@
-# Shopify MCP Server v4.0.0
+# Shopify MCP Server v4.0.1
 
 Shopify Admin GraphQL API **2026-01** MCP server. 54 tools aligned to the OAuth scopes actually granted on the token — orders, products, variants, media, inventory & per-location fulfilment, customers, collections, discounts, abandoned checkouts, blog content, pages, metafields, bulk variant updates, and analytics.
 

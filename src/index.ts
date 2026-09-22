@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Shopify MCP Server v4.0.0
+ * Shopify MCP Server v4.0.1
  *
  * Shopify Admin GraphQL API 2026-01.
  *
@@ -35,7 +35,7 @@ import { registerBulkVariantTools } from "./tools/bulk-variants.js";
 import { registerAnalyticsTools } from "./tools/analytics.js";
 import { registerMarketingTools } from "./tools/marketing.js";
 
-const VERSION = "4.0.0";
+const VERSION = "4.0.1";
 
 const server = new McpServer({
   name: "shopify-mcp-server",
