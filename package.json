@@ -1,0 +1,70 @@
+{
+  "name": "shopify-admin-mcp-server",
+  "version": "4.0.0",
+  "description": "Shopify Admin GraphQL API 2026-01 MCP server — 54 scope-aligned tools for orders, products, variants, media, inventory & location fulfilment, customers, collections, discounts, checkouts, content, metafields, bulk variant updates, analytics",
+  "type": "module",
+  "license": "MIT",
+  "author": "c0505 <219860721+camerone05@users.noreply.github.com>",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "shopify",
+    "shopify-admin-api",
+    "graphql",
+    "ecommerce",
+    "inventory",
+    "orders",
+    "claude",
+    "llm",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camerone05/shopify-admin-mcp-server.git"
+  },
+  "homepage": "https://github.com/camerone05/shopify-admin-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/camerone05/shopify-admin-mcp-server/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "shopify-admin-mcp-server": "dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.7.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.9"
+  }
+}
